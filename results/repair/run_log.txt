@@ -1,0 +1,38 @@
+20:54:55 device cuda | torch 2.11.0+cu130 | xgb 3.4.1 | python 3.13.16 | args {'data': '/content/data', 'out': '/content/results_repair', 'seeds': '0,1,2', 'models': 'rf,xgb,cnn,ft', 'eps': '0.05,0.1,0.2,0.5', 'benign_train': 100000, 'benign_test': 40000, 'fam_train': 15000, 'fam_test': 5000, 'epochs': 10, 'bb_per_fam': 500, 'fpr': 0.01, 'quick': False, 'skip_loao': True, 'repair': True, 'audit_only': False}
+20:55:44 loaded 2099971 rows, 384774 removed as duplicates/ambiguous, 1715197 kept
+20:55:47 features 82 | modifiable 42
+20:55:47 family counts {'BENIGN': 1432904, 'DoS': 171634, 'DDoS': 95144, 'PortScan': 7695, 'BruteForce': 6933, 'Botnet': 736, 'WebAttack': 104, 'Infiltration': 36, 'Heartbleed': 11}
+20:56:22 seed 0 in_dist trained rf in 30s
+20:56:25 seed 0 in_dist trained xgb in 3s
+20:56:35 seed 0 in_dist trained cnn in 10s
+20:57:47 seed 0 in_dist trained ft in 73s
+20:57:54 seed 0 in_dist detection@1%FPR {'rf': 0.9999, 'xgb': 0.9999, 'cnn': 0.9997, 'ft': 0.999}
+20:57:54 seed 0 relations kept for audit/repair ['Flow Bytes/s', 'Flow Packets/s', 'Fwd Packets/s', 'Bwd Packets/s', 'Fwd Packet Length Mean', 'Bwd Packet Length Mean', 'Fwd Segment Size Avg', 'Average Packet Size']
+20:58:21 seed 0 eps 0.05 perturbation scenarios done
+20:58:48 seed 0 eps 0.1 perturbation scenarios done
+20:59:17 seed 0 eps 0.2 perturbation scenarios done
+20:59:45 seed 0 eps 0.5 perturbation scenarios done
+20:59:45 seed 0 complete | elapsed 4.8 min
+21:00:20 seed 1 in_dist trained rf in 31s
+21:00:23 seed 1 in_dist trained xgb in 3s
+21:00:31 seed 1 in_dist trained cnn in 8s
+21:01:44 seed 1 in_dist trained ft in 73s
+21:01:51 seed 1 in_dist detection@1%FPR {'rf': 0.9999, 'xgb': 0.9999, 'cnn': 0.9996, 'ft': 0.9988}
+21:01:51 seed 1 relations kept for audit/repair ['Flow Bytes/s', 'Flow Packets/s', 'Fwd Packets/s', 'Bwd Packets/s', 'Fwd Packet Length Mean', 'Bwd Packet Length Mean', 'Fwd Segment Size Avg', 'Average Packet Size']
+21:02:19 seed 1 eps 0.05 perturbation scenarios done
+21:02:47 seed 1 eps 0.1 perturbation scenarios done
+21:03:16 seed 1 eps 0.2 perturbation scenarios done
+21:03:44 seed 1 eps 0.5 perturbation scenarios done
+21:03:44 seed 1 complete | elapsed 8.8 min
+21:04:18 seed 2 in_dist trained rf in 30s
+21:04:20 seed 2 in_dist trained xgb in 3s
+21:04:28 seed 2 in_dist trained cnn in 8s
+21:05:42 seed 2 in_dist trained ft in 73s
+21:05:49 seed 2 in_dist detection@1%FPR {'rf': 0.9999, 'xgb': 0.9999, 'cnn': 0.9993, 'ft': 0.999}
+21:05:49 seed 2 relations kept for audit/repair ['Flow Bytes/s', 'Flow Packets/s', 'Fwd Packets/s', 'Bwd Packets/s', 'Fwd Packet Length Mean', 'Bwd Packet Length Mean', 'Fwd Segment Size Avg', 'Average Packet Size']
+21:06:17 seed 2 eps 0.05 perturbation scenarios done
+21:06:46 seed 2 eps 0.1 perturbation scenarios done
+21:07:14 seed 2 eps 0.2 perturbation scenarios done
+21:07:43 seed 2 eps 0.5 perturbation scenarios done
+21:07:43 seed 2 complete | elapsed 12.8 min
+21:07:43 DONE rows 1608 md5 907228097e74ef7961ae53b42be6b4e8

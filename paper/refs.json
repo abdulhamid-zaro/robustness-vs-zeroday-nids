@@ -1,0 +1,194 @@
+{
+ "sommer": {
+  "authors": "R. Sommer, V. Paxson",
+  "title": "Outside the Closed World: On Using Machine Learning for Network Intrusion Detection",
+  "venue": "2010 IEEE Symposium on Security and Privacy",
+  "year": 2010,
+  "doi": "10.1109/SP.2010.25"
+ },
+ "arp": {
+  "authors": "D. Arp, E. Quiring, F. Pendlebury, A. Warnecke, F. Pierazzi, C. Wressnegger, L. Cavallaro, K. Rieck",
+  "title": "Dos and Don'ts of Machine Learning in Computer Security",
+  "venue": "31st USENIX Security Symposium",
+  "year": 2022,
+  "doi": "",
+  "url": "https://www.usenix.org/conference/usenixsecurity22/presentation/arp"
+ },
+ "layeghy": {
+  "authors": "S. Layeghy, M. Portmann",
+  "title": "Explainable Cross-domain Evaluation of ML-based Network Intrusion Detection Systems",
+  "venue": "Computers & Electrical Engineering",
+  "year": 2023,
+  "doi": "10.1016/j.compeleceng.2023.108692"
+ },
+ "langat": {
+  "authors": "P. K. Langat, M. Kimwele, D. Kaburu",
+  "title": "A Framework for Simulated Zero-Day Detection Using Synthetic Attack Generation and Out-of-Distribution Evaluation",
+  "venue": "Journal of Cyber Security",
+  "year": 2026,
+  "doi": "10.32604/jcs.2026.083592"
+ },
+ "fgsm": {
+  "authors": "I. Goodfellow, J. Shlens, C. Szegedy",
+  "title": "Explaining and Harnessing Adversarial Examples",
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "year": 2015,
+  "doi": "10.48550/arXiv.1412.6572"
+ },
+ "pgd": {
+  "authors": "A. Madry, A. Makelov, L. Schmidt, D. Tsipras, A. Vladu",
+  "title": "Towards Deep Learning Models Resistant to Adversarial Attacks",
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "year": 2018,
+  "doi": "10.48550/arXiv.1706.06083"
+ },
+ "engelen": {
+  "authors": "G. Engelen, V. Rimmer, W. Joosen",
+  "title": "Troubleshooting an Intrusion Detection Dataset: the CICIDS2017 Case Study",
+  "venue": "2021 IEEE Security and Privacy Workshops (SPW)",
+  "year": 2021,
+  "doi": "10.1109/SPW53761.2021.00009"
+ },
+ "liu22": {
+  "authors": "L. Liu, G. Engelen, T. Lynar, D. Essam, W. Joosen",
+  "title": "Error Prevalence in NIDS datasets: A Case Study on CIC-IDS-2017 and CSE-CIC-IDS-2018",
+  "venue": "2022 IEEE Conference on Communications and Network Security (CNS)",
+  "year": 2022,
+  "doi": "10.1109/CNS56114.2022.9947235"
+ },
+ "simba": {
+  "authors": "C. Guo, J. R. Gardner, Y. You, A. G. Wilson, K. Q. Weinberger",
+  "title": "Simple Black-box Adversarial Attacks",
+  "venue": "International Conference on Machine Learning (ICML)",
+  "year": 2019,
+  "doi": "10.48550/arXiv.1905.07121"
+ },
+ "kantchelian": {
+  "authors": "A. Kantchelian, J. D. Tygar, A. D. Joseph",
+  "title": "Evasion and Hardening of Tree Ensemble Classifiers",
+  "venue": "International Conference on Machine Learning (ICML)",
+  "year": 2016,
+  "doi": "10.48550/arXiv.1509.07892"
+ },
+ "ahmad": {
+  "authors": "R. Ahmad, I. Alsmadi, W. Alhamdani, L. Tawalbeh",
+  "title": "Zero-day attack detection: a systematic literature review",
+  "venue": "Artificial Intelligence Review",
+  "year": 2023,
+  "doi": "10.1007/s10462-023-10437-z"
+ },
+ "zoppi": {
+  "authors": "T. Zoppi, A. Ceccarelli, T. Puccetti, A. Bondavalli",
+  "title": "Which algorithm can detect unknown attacks? Comparison of supervised, unsupervised and meta-learning algorithms for intrusion detection",
+  "venue": "Computers & Security",
+  "year": 2023,
+  "doi": "10.1016/j.cose.2023.103107"
+ },
+ "sharafaldin": {
+  "authors": "I. Sharafaldin, A. H. Lashkari, A. A. Ghorbani",
+  "title": "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization",
+  "venue": "Proc. 4th International Conference on Information Systems Security and Privacy (ICISSP)",
+  "year": 2018,
+  "doi": "10.5220/0006639801080116"
+ },
+ "lanvin": {
+  "authors": "M. Lanvin, P.-F. Gimenez, Y. Han, F. Majorczyk, L. Me, E. Totel",
+  "title": "Errors in the CICIDS2017 Dataset and the Significant Differences in Detection Performances It Makes",
+  "venue": "Risks and Security of Internet and Systems (CRiSIS 2022), LNCS",
+  "year": 2023,
+  "doi": "10.1007/978-3-031-31108-6_2"
+ },
+ "pierazzi": {
+  "authors": "F. Pierazzi, F. Pendlebury, J. Cortellazzi, L. Cavallaro",
+  "title": "Intriguing Properties of Adversarial ML Attacks in the Problem Space",
+  "venue": "2020 IEEE Symposium on Security and Privacy (SP)",
+  "year": 2020,
+  "doi": "10.1109/SP40000.2020.00073"
+ },
+ "apruzzese": {
+  "authors": "G. Apruzzese, M. Andreolini, L. Ferretti, M. Marchetti, M. Colajanni",
+  "title": "Modeling Realistic Adversarial Attacks against Network Intrusion Detection Systems",
+  "venue": "Digital Threats: Research and Practice",
+  "year": 2022,
+  "doi": "10.1145/3469659"
+ },
+ "rf": {
+  "authors": "L. Breiman",
+  "title": "Random Forests",
+  "venue": "Machine Learning",
+  "year": 2001,
+  "doi": "10.1023/A:1010933404324"
+ },
+ "xgb": {
+  "authors": "T. Chen, C. Guestrin",
+  "title": "XGBoost: A Scalable Tree Boosting System",
+  "venue": "Proc. 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+  "year": 2016,
+  "doi": "10.1145/2939672.2939785"
+ },
+ "ftt": {
+  "authors": "Y. Gorishniy, I. Rubachev, V. Khrulkov, A. Babenko",
+  "title": "Revisiting Deep Learning Models for Tabular Data",
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "year": 2021,
+  "doi": "10.48550/arXiv.2106.11959"
+ },
+ "mixup": {
+  "authors": "H. Zhang, M. Cisse, Y. N. Dauphin, D. Lopez-Paz",
+  "title": "mixup: Beyond Empirical Risk Minimization",
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "year": 2018,
+  "doi": "10.48550/arXiv.1710.09412"
+ },
+ "dietterich": {
+  "authors": "T. G. Dietterich",
+  "title": "Approximate Statistical Tests for Comparing Supervised Classification Learning Algorithms",
+  "venue": "Neural Computation",
+  "year": 1998,
+  "doi": "10.1162/089976698300017197"
+ },
+ "taori": {
+  "authors": "R. Taori, A. Dave, V. Shankar, N. Carlini, B. Recht, L. Schmidt",
+  "title": "Measuring Robustness to Natural Distribution Shifts in Image Classification",
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "year": 2020,
+  "doi": "10.48550/arXiv.2007.00644"
+ },
+ "peppes": {
+  "authors": "N. Peppes, T. Alexakis, E. Adamopoulou, K. Demestichas",
+  "title": "The Effectiveness of Zero-Day Attacks Data Samples Generated via GANs on Deep Learning Classifiers",
+  "venue": "Sensors, vol. 23, no. 2, art. 900",
+  "year": 2023,
+  "doi": "10.3390/s23020900"
+ },
+ "yang20": {
+  "authors": "Y. Yang, K. Zheng, B. Wu, Y. Yang, X. Wang",
+  "title": "Network Intrusion Detection Based on Supervised Adversarial Variational Auto-Encoder With Regularization",
+  "venue": "IEEE Access, vol. 8, pp. 42169-42184",
+  "year": 2020,
+  "doi": "10.1109/ACCESS.2020.2977007"
+ },
+ "mu26": {
+  "authors": "Z. Mu, X. Shi, S. Dogan",
+  "title": "A Novel Solution for Zero-Day Attack Detection in IDS using Self-Attention and Jensen-Shannon Divergence in WGAN-GP",
+  "venue": "arXiv preprint arXiv:2603.19350",
+  "year": 2026,
+  "doi": "",
+  "url": "https://arxiv.org/abs/2603.19350"
+ },
+ "alhussien": {
+  "authors": "N. Alhussien, A. Aleroud, A. Melhem, S. Y. Khamaiseh",
+  "title": "Constraining Adversarial Attacks on Network Intrusion Detection Systems: Transferability and Defense Analysis",
+  "venue": "IEEE Transactions on Network and Service Management, vol. 21, no. 3, pp. 2751-2772",
+  "year": 2024,
+  "doi": "10.1109/TNSM.2024.3357316"
+ },
+ "sarhan": {
+  "authors": "M. Sarhan, S. Layeghy, M. Gallagher, M. Portmann",
+  "title": "From Zero-Shot Machine Learning to Zero-Day Attack Detection",
+  "venue": "arXiv preprint arXiv:2109.14868",
+  "year": 2021,
+  "doi": "",
+  "url": "https://arxiv.org/abs/2109.14868"
+ }
+}

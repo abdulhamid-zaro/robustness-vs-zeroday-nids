@@ -1,0 +1,138 @@
+10:28:49 MILP device cpu | args {'data': '/content/data', 'out': '/content/res_milp5', 'seeds': '0,1,2,3,4', 'models': 'rf,xgb,cnn,ft', 'eps': '0.05,0.1,0.2,0.5', 'benign_train': 100000, 'benign_test': 40000, 'fam_train': 15000, 'fam_test': 5000, 'epochs': 10, 'bb_per_fam': 500, 'fpr': 0.01, 'quick': False, 'skip_loao': False, 'repair': False, 'audit_only': False, 'supp': False, 'supp2': False, 'tree_n': 200, 'split': 'random', 'openset': False, 'milp': True, 'milp_n': 200, 'milp_eps': '0.2,0.5', 'milp_models': 'xgb,rf', 'milp_time': 60.0}
+10:30:22 loaded 2099971 rows, 384774 removed as duplicates/ambiguous, 1715197 kept
+10:30:52 seed 0 xgb: 300 trees, leaf-sum check max error 8.56e-06, threshold 0.001078
+10:31:00 seed 0 xgb eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:31:07 seed 0 xgb eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:31:13 seed 0 xgb eps 0.2 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:31:25 seed 0 xgb eps 0.2 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.06s
+10:31:35 seed 0 xgb eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:31:37 seed 0 xgb eps 0.2 WebAttack: {'certified': 32, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 32} | median solve 0.05s
+10:31:52 seed 0 xgb eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.06s
+10:32:09 seed 0 xgb eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.08s
+10:32:21 seed 0 xgb eps 0.5 PortScan: {'certified': 197, 'evaded': 0, 'undecided': 3, 'missed_clean': 0} {'infeasible': 197, 'feasible': 3, 'unverified': 3} | median solve 0.04s
+10:32:40 seed 0 xgb eps 0.5 BruteForce: {'certified': 198, 'evaded': 0, 'undecided': 2, 'missed_clean': 0} {'infeasible': 198, 'feasible': 2, 'unverified': 2} | median solve 0.09s
+10:33:02 seed 0 xgb eps 0.5 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.06s
+10:33:05 seed 0 xgb eps 0.5 WebAttack: {'certified': 31, 'evaded': 0, 'undecided': 1, 'missed_clean': 0} {'infeasible': 31, 'feasible': 1, 'unverified': 1} | median solve 0.06s
+10:33:48 seed 0 rf: 100 trees, leaf-sum check max error 6.66e-16, threshold 0.034951
+10:33:53 seed 0 rf eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:33:56 seed 0 rf eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:34:00 seed 0 rf eps 0.2 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:34:08 seed 0 rf eps 0.2 BruteForce: {'certified': 198, 'evaded': 1, 'undecided': 1, 'missed_clean': 0} {'infeasible': 198, 'feasible': 2, 'unverified': 1} | median solve 0.03s
+10:34:19 seed 0 rf eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:34:21 seed 0 rf eps 0.2 WebAttack: {'certified': 31, 'evaded': 0, 'undecided': 1, 'missed_clean': 0} {'infeasible': 31, 'feasible': 1, 'unverified': 1} | median solve 0.02s
+10:34:28 seed 0 rf eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:34:36 seed 0 rf eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:34:52 seed 0 rf eps 0.5 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:35:07 seed 0 rf eps 0.5 BruteForce: {'certified': 198, 'evaded': 1, 'undecided': 1, 'missed_clean': 0} {'infeasible': 198, 'feasible': 2, 'unverified': 1} | median solve 0.06s
+10:35:29 seed 0 rf eps 0.5 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.08s
+10:35:50 seed 0 rf eps 0.5 WebAttack: {'certified': 30, 'evaded': 1, 'undecided': 1, 'missed_clean': 0} {'infeasible': 30, 'feasible': 2, 'unverified': 1} | median solve 0.03s
+10:35:50 seed 0 milp complete | 7.0 min
+10:36:15 seed 1 xgb: 300 trees, leaf-sum check max error 1.02e-05, threshold 0.001163
+10:36:22 seed 1 xgb eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:36:30 seed 1 xgb eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:36:36 seed 1 xgb eps 0.2 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:36:48 seed 1 xgb eps 0.2 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:37:03 seed 1 xgb eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.07s
+10:37:06 seed 1 xgb eps 0.2 WebAttack: {'certified': 32, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 32} | median solve 0.04s
+10:37:18 seed 1 xgb eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:37:34 seed 1 xgb eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.08s
+10:37:46 seed 1 xgb eps 0.5 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:38:03 seed 1 xgb eps 0.5 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.06s
+10:38:20 seed 1 xgb eps 0.5 Botnet: {'certified': 198, 'evaded': 1, 'undecided': 1, 'missed_clean': 0} {'infeasible': 198, 'feasible': 2, 'unverified': 1} | median solve 0.06s
+10:38:24 seed 1 xgb eps 0.5 WebAttack: {'certified': 30, 'evaded': 0, 'undecided': 2, 'missed_clean': 0} {'infeasible': 30, 'feasible': 2, 'unverified': 2} | median solve 0.04s
+10:39:07 seed 1 rf: 100 trees, leaf-sum check max error 7.77e-16, threshold 0.039875
+10:39:12 seed 1 rf eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:39:16 seed 1 rf eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.01s
+10:39:23 seed 1 rf eps 0.2 PortScan: {'certified': 199, 'evaded': 1, 'undecided': 0, 'missed_clean': 0} {'infeasible': 199, 'feasible': 1} | median solve 0.02s
+10:39:30 seed 1 rf eps 0.2 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:39:38 seed 1 rf eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:39:41 seed 1 rf eps 0.2 WebAttack: {'certified': 31, 'evaded': 0, 'undecided': 1, 'missed_clean': 0} {'infeasible': 31, 'feasible': 1, 'unverified': 1} | median solve 0.02s
+10:39:49 seed 1 rf eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:39:56 seed 1 rf eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:40:16 seed 1 rf eps 0.5 PortScan: {'certified': 199, 'evaded': 1, 'undecided': 0, 'missed_clean': 0} {'infeasible': 199, 'feasible': 1} | median solve 0.03s
+10:40:26 seed 1 rf eps 0.5 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:40:57 seed 1 rf eps 0.5 Botnet: {'certified': 195, 'evaded': 5, 'undecided': 0, 'missed_clean': 0} {'infeasible': 195, 'feasible': 5} | median solve 0.07s
+10:42:15 seed 1 rf eps 0.5 WebAttack: {'certified': 29, 'evaded': 0, 'undecided': 3, 'missed_clean': 0} {'infeasible': 29, 'feasible': 3, 'unverified': 3} | median solve 0.03s
+10:42:15 seed 1 milp complete | 13.4 min
+10:42:41 seed 2 xgb: 300 trees, leaf-sum check max error 6.26e-06, threshold 0.001000
+10:42:48 seed 2 xgb eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:42:55 seed 2 xgb eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:43:01 seed 2 xgb eps 0.2 PortScan: {'certified': 198, 'evaded': 0, 'undecided': 0, 'missed_clean': 2} {'infeasible': 198} | median solve 0.03s
+10:43:11 seed 2 xgb eps 0.2 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:43:20 seed 2 xgb eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:43:22 seed 2 xgb eps 0.2 WebAttack: {'certified': 32, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 32} | median solve 0.02s
+10:43:35 seed 2 xgb eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.06s
+10:43:49 seed 2 xgb eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.07s
+10:44:11 seed 2 xgb eps 0.5 PortScan: {'certified': 192, 'evaded': 6, 'undecided': 0, 'missed_clean': 2} {'infeasible': 192, 'feasible': 6} | median solve 0.04s
+10:44:31 seed 2 xgb eps 0.5 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.10s
+10:44:59 seed 2 xgb eps 0.5 Botnet: {'certified': 198, 'evaded': 0, 'undecided': 2, 'missed_clean': 0} {'infeasible': 198, 'feasible': 2, 'unverified': 2} | median solve 0.12s
+10:45:04 seed 2 xgb eps 0.5 WebAttack: {'certified': 29, 'evaded': 1, 'undecided': 2, 'missed_clean': 0} {'infeasible': 29, 'feasible': 3, 'unverified': 2} | median solve 0.06s
+10:45:44 seed 2 rf: 100 trees, leaf-sum check max error 8.88e-16, threshold 0.043956
+10:45:49 seed 2 rf eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:45:53 seed 2 rf eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:45:57 seed 2 rf eps 0.2 PortScan: {'certified': 199, 'evaded': 0, 'undecided': 0, 'missed_clean': 1} {'infeasible': 199} | median solve 0.01s
+10:46:06 seed 2 rf eps 0.2 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:46:13 seed 2 rf eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:46:20 seed 2 rf eps 0.2 WebAttack: {'certified': 30, 'evaded': 0, 'undecided': 2, 'missed_clean': 0} {'infeasible': 30, 'feasible': 2, 'unverified': 2} | median solve 0.03s
+10:46:26 seed 2 rf eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:46:34 seed 2 rf eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:47:43 seed 2 rf eps 0.5 PortScan: {'certified': 196, 'evaded': 2, 'undecided': 1, 'missed_clean': 1} {'infeasible': 196, 'feasible': 2, 'timeout': 1} | median solve 0.02s
+10:48:01 seed 2 rf eps 0.5 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.08s
+10:49:22 seed 2 rf eps 0.5 Botnet: {'certified': 184, 'evaded': 12, 'undecided': 4, 'missed_clean': 0} {'infeasible': 184, 'feasible': 16, 'unverified': 4} | median solve 0.19s
+10:50:25 seed 2 rf eps 0.5 WebAttack: {'certified': 28, 'evaded': 1, 'undecided': 3, 'missed_clean': 0} {'feasible': 4, 'unverified': 3, 'infeasible': 28} | median solve 0.03s
+10:50:25 seed 2 milp complete | 21.6 min
+10:50:50 seed 3 xgb: 300 trees, leaf-sum check max error 1.06e-05, threshold 0.001131
+10:50:59 seed 3 xgb eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:51:08 seed 3 xgb eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:51:14 seed 3 xgb eps 0.2 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:51:27 seed 3 xgb eps 0.2 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:51:41 seed 3 xgb eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.07s
+10:51:43 seed 3 xgb eps 0.2 WebAttack: {'certified': 32, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 32} | median solve 0.04s
+10:51:59 seed 3 xgb eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:52:09 seed 3 xgb eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:52:49 seed 3 xgb eps 0.5 PortScan: {'certified': 195, 'evaded': 5, 'undecided': 0, 'missed_clean': 0} {'infeasible': 195, 'feasible': 5} | median solve 0.06s
+10:53:10 seed 3 xgb eps 0.5 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.07s
+10:53:50 seed 3 xgb eps 0.5 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.19s
+10:53:53 seed 3 xgb eps 0.5 WebAttack: {'certified': 30, 'evaded': 0, 'undecided': 2, 'missed_clean': 0} {'infeasible': 30, 'feasible': 2, 'unverified': 2} | median solve 0.05s
+10:54:35 seed 3 rf: 100 trees, leaf-sum check max error 7.77e-16, threshold 0.037969
+10:54:41 seed 3 rf eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:54:46 seed 3 rf eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:54:49 seed 3 rf eps 0.2 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.01s
+10:54:57 seed 3 rf eps 0.2 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:55:04 seed 3 rf eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:55:05 seed 3 rf eps 0.2 WebAttack: {'certified': 32, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 32} | median solve 0.02s
+10:55:15 seed 3 rf eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:55:21 seed 3 rf eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:55:31 seed 3 rf eps 0.5 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:55:43 seed 3 rf eps 0.5 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:56:41 seed 3 rf eps 0.5 Botnet: {'certified': 183, 'evaded': 10, 'undecided': 7, 'missed_clean': 0} {'infeasible': 183, 'feasible': 17, 'unverified': 7} | median solve 0.05s
+10:57:00 seed 3 rf eps 0.5 WebAttack: {'certified': 32, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 32} | median solve 0.03s
+10:57:00 seed 3 milp complete | 28.2 min
+10:57:29 seed 4 xgb: 300 trees, leaf-sum check max error 8.46e-06, threshold 0.001072
+10:57:35 seed 4 xgb eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:57:43 seed 4 xgb eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:57:48 seed 4 xgb eps 0.2 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.02s
+10:57:59 seed 4 xgb eps 0.2 BruteForce: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:58:09 seed 4 xgb eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+10:58:10 seed 4 xgb eps 0.2 WebAttack: {'certified': 32, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 32} | median solve 0.02s
+10:58:23 seed 4 xgb eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:58:35 seed 4 xgb eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:58:43 seed 4 xgb eps 0.5 PortScan: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+10:58:59 seed 4 xgb eps 0.5 BruteForce: {'certified': 197, 'evaded': 1, 'undecided': 2, 'missed_clean': 0} {'infeasible': 197, 'feasible': 3, 'unverified': 2} | median solve 0.05s
+10:59:12 seed 4 xgb eps 0.5 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.05s
+10:59:16 seed 4 xgb eps 0.5 WebAttack: {'certified': 30, 'evaded': 1, 'undecided': 1, 'missed_clean': 0} {'infeasible': 30, 'feasible': 2, 'unverified': 1} | median solve 0.07s
+10:59:59 seed 4 rf: 100 trees, leaf-sum check max error 7.77e-16, threshold 0.039020
+11:00:05 seed 4 rf eps 0.2 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+11:00:08 seed 4 rf eps 0.2 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.01s
+11:00:17 seed 4 rf eps 0.2 PortScan: {'certified': 198, 'evaded': 1, 'undecided': 1, 'missed_clean': 0} {'infeasible': 198, 'feasible': 2, 'unverified': 1} | median solve 0.02s
+11:00:25 seed 4 rf eps 0.2 BruteForce: {'certified': 199, 'evaded': 1, 'undecided': 0, 'missed_clean': 0} {'infeasible': 199, 'feasible': 1} | median solve 0.03s
+11:00:33 seed 4 rf eps 0.2 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.04s
+11:00:41 seed 4 rf eps 0.2 WebAttack: {'certified': 31, 'evaded': 1, 'undecided': 0, 'missed_clean': 0} {'infeasible': 31, 'feasible': 1} | median solve 0.02s
+11:00:49 seed 4 rf eps 0.5 DoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+11:00:54 seed 4 rf eps 0.5 DDoS: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.03s
+11:02:00 seed 4 rf eps 0.5 PortScan: {'certified': 199, 'evaded': 0, 'undecided': 1, 'missed_clean': 0} {'infeasible': 199, 'timeout': 1} | median solve 0.03s
+11:02:15 seed 4 rf eps 0.5 BruteForce: {'certified': 198, 'evaded': 1, 'undecided': 1, 'missed_clean': 0} {'infeasible': 198, 'feasible': 2, 'unverified': 1} | median solve 0.05s
+11:02:39 seed 4 rf eps 0.5 Botnet: {'certified': 200, 'evaded': 0, 'undecided': 0, 'missed_clean': 0} {'infeasible': 200} | median solve 0.07s
+11:03:35 seed 4 rf eps 0.5 WebAttack: {'certified': 28, 'evaded': 1, 'undecided': 3, 'missed_clean': 0} {'infeasible': 28, 'feasible': 4, 'unverified': 3} | median solve 0.04s
+11:03:35 seed 4 milp complete | 34.8 min
+11:03:35 MILP DONE rows 120 md5 730850f57ba941bd6e8517e77cdd2b28

@@ -1,0 +1,62 @@
+{
+ "robustness_vs_zeroday": {
+  "rf": {
+   "gap_mean": 0.23517104622889443,
+   "gap_ci95": 0.07503756798659407,
+   "n_seeds": 5,
+   "paired_t_p": 0.0009604426234490317,
+   "wilcoxon_p": 0.0625
+  },
+  "xgb": {
+   "gap_mean": 0.5946839574246591,
+   "gap_ci95": 0.06712841496936225,
+   "n_seeds": 5,
+   "paired_t_p": 1.621454831085217e-05,
+   "wilcoxon_p": 0.0625
+  },
+  "cnn": {
+   "gap_mean": 0.650432876980461,
+   "gap_ci95": 0.12827202003945123,
+   "n_seeds": 5,
+   "paired_t_p": 0.00014772182691503917,
+   "wilcoxon_p": 0.0625
+  },
+  "ft": {
+   "gap_mean": 0.7177574598616548,
+   "gap_ci95": 0.08734513189603192,
+   "n_seeds": 5,
+   "paired_t_p": 2.1862365373590495e-05,
+   "wilcoxon_p": 0.0625
+  },
+  "pooled_wilcoxon_p": 1.9073486328125e-06,
+  "pooled_n": 20,
+  "spearman_rho": 0.6925107914429675,
+  "spearman_p": 0.0007143277850184176,
+  "model_rank_robust": [
+   "xgb",
+   "rf",
+   "ft",
+   "cnn"
+  ],
+  "model_rank_loao": [
+   "rf",
+   "xgb",
+   "cnn",
+   "ft"
+  ]
+ },
+ "loao_auroc_vs_dr": {
+  "auroc": {
+   "cnn": 0.772,
+   "ft": 0.7337,
+   "rf": 0.9628,
+   "xgb": 0.9663
+  },
+  "detection_rate": {
+   "cnn": 0.2581,
+   "ft": 0.2281,
+   "rf": 0.7615,
+   "xgb": 0.402
+  }
+ }
+}

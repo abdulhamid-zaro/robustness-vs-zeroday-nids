@@ -1,0 +1,14 @@
+20:41:46 device cuda | torch 2.11.0+cu130 | xgb 3.4.1 | python 3.13.16 | args {'data': '/content/data', 'out': '/content/audit_norepair', 'seeds': '0,1,2', 'models': '', 'eps': '0.05,0.1,0.2,0.5', 'benign_train': 100000, 'benign_test': 40000, 'fam_train': 15000, 'fam_test': 5000, 'epochs': 10, 'bb_per_fam': 500, 'fpr': 0.01, 'quick': False, 'skip_loao': True, 'repair': False, 'audit_only': True}
+20:52:27 device cuda | torch 2.11.0+cu130 | xgb 3.4.1 | python 3.13.16 | args {'data': '/content/data', 'out': '/content/audit_norepair', 'seeds': '0,1,2', 'models': '', 'eps': '0.05,0.1,0.2,0.5', 'benign_train': 100000, 'benign_test': 40000, 'fam_train': 15000, 'fam_test': 5000, 'epochs': 10, 'bb_per_fam': 500, 'fpr': 0.01, 'quick': False, 'skip_loao': True, 'repair': False, 'audit_only': True}
+20:53:19 loaded 2099971 rows, 384774 removed as duplicates/ambiguous, 1715197 kept
+20:53:22 features 82 | modifiable 42
+20:53:22 family counts {'BENIGN': 1432904, 'DoS': 171634, 'DDoS': 95144, 'PortScan': 7695, 'BruteForce': 6933, 'Botnet': 736, 'WebAttack': 104, 'Infiltration': 36, 'Heartbleed': 11}
+20:53:33 seed 0 in_dist detection@1%FPR {}
+20:53:33 seed 0 relations kept for audit/repair ['Flow Bytes/s', 'Flow Packets/s', 'Fwd Packets/s', 'Bwd Packets/s', 'Fwd Packet Length Mean', 'Bwd Packet Length Mean', 'Fwd Segment Size Avg', 'Average Packet Size']
+20:53:33 seed 0 audit done
+20:53:41 seed 1 in_dist detection@1%FPR {}
+20:53:41 seed 1 relations kept for audit/repair ['Flow Bytes/s', 'Flow Packets/s', 'Fwd Packets/s', 'Bwd Packets/s', 'Fwd Packet Length Mean', 'Bwd Packet Length Mean', 'Fwd Segment Size Avg', 'Average Packet Size']
+20:53:42 seed 1 audit done
+20:53:49 seed 2 in_dist detection@1%FPR {}
+20:53:49 seed 2 relations kept for audit/repair ['Flow Bytes/s', 'Flow Packets/s', 'Fwd Packets/s', 'Bwd Packets/s', 'Fwd Packet Length Mean', 'Bwd Packet Length Mean', 'Fwd Segment Size Avg', 'Average Packet Size']
+20:53:50 seed 2 audit done

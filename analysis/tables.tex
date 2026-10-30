@@ -1,0 +1,31 @@
+\begin{table}[t]\centering\caption{Detection rate at 1\% FPR on held-out (unseen) attack families, mean $\pm$ 95\% CI over seeds.}\label{tab:loao}
+\resizebox{\columnwidth}{!}{\begin{tabular}{lcccc}\toprule
+Held-out family & RF & XGBoost & 1D-CNN & FT-Transformer \\\midrule
+DoS & 0.988 $\pm$ 0.007 & 0.979 $\pm$ 0.010 & 0.043 $\pm$ 0.061 & 0.038 $\pm$ 0.023 \\
+DDoS & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 \\
+PortScan & 0.481 $\pm$ 0.396 & 0.097 $\pm$ 0.009 & 0.058 $\pm$ 0.027 & 0.069 $\pm$ 0.015 \\
+BruteForce & 0.573 $\pm$ 0.022 & 0.042 $\pm$ 0.104 & 0.000 $\pm$ 0.000 & 0.023 $\pm$ 0.060 \\
+Botnet & 0.940 $\pm$ 0.030 & 0.206 $\pm$ 0.402 & 0.285 $\pm$ 0.482 & 0.176 $\pm$ 0.490 \\
+WebAttack & 0.588 $\pm$ 0.428 & 0.087 $\pm$ 0.043 & 0.163 $\pm$ 0.154 & 0.062 $\pm$ 0.027 \\
+\bottomrule\end{tabular}}\end{table}
+
+\begin{table}[t]\centering\caption{Detection rate at 1\% FPR under constrained perturbations ($\epsilon$ in standardized log space), mean $\pm$ 95\% CI over seeds.}\label{tab:pert}
+\resizebox{\columnwidth}{!}{\begin{tabular}{llcccc}\toprule
+Attack & $\epsilon$ & RF & XGBoost & 1D-CNN & FT-Transformer \\\midrule
+noise & 0.05 & 1.000 $\pm$ 0.000 & 0.999 $\pm$ 0.000 & 0.999 $\pm$ 0.000 & 0.999 $\pm$ 0.000 \\
+noise & 0.1 & 1.000 $\pm$ 0.000 & 0.999 $\pm$ 0.000 & 0.999 $\pm$ 0.000 & 0.999 $\pm$ 0.001 \\
+noise & 0.2 & 1.000 $\pm$ 0.000 & 0.999 $\pm$ 0.000 & 0.999 $\pm$ 0.001 & 0.997 $\pm$ 0.003 \\
+noise & 0.5 & 1.000 $\pm$ 0.000 & 0.999 $\pm$ 0.000 & 0.967 $\pm$ 0.020 & 0.988 $\pm$ 0.013 \\
+pgd\_transfer & 0.05 & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 0.999 $\pm$ 0.000 & 0.999 $\pm$ 0.001 \\
+pgd\_transfer & 0.1 & 1.000 $\pm$ 0.000 & 0.999 $\pm$ 0.000 & 0.999 $\pm$ 0.001 & 0.998 $\pm$ 0.001 \\
+pgd\_transfer & 0.2 & 1.000 $\pm$ 0.000 & 0.999 $\pm$ 0.001 & 0.997 $\pm$ 0.002 & 0.997 $\pm$ 0.002 \\
+pgd\_transfer & 0.5 & 1.000 $\pm$ 0.000 & 0.999 $\pm$ 0.001 & 0.758 $\pm$ 0.110 & 0.974 $\pm$ 0.040 \\
+pgd\_whitebox & 0.05 & -- & -- & 0.998 $\pm$ 0.001 & 0.999 $\pm$ 0.001 \\
+pgd\_whitebox & 0.1 & -- & -- & 0.997 $\pm$ 0.001 & 0.998 $\pm$ 0.001 \\
+pgd\_whitebox & 0.2 & -- & -- & 0.970 $\pm$ 0.021 & 0.987 $\pm$ 0.012 \\
+pgd\_whitebox & 0.5 & -- & -- & 0.220 $\pm$ 0.094 & 0.824 $\pm$ 0.159 \\
+simba\_blackbox & 0.05 & 0.999 $\pm$ 0.001 & 0.999 $\pm$ 0.001 & 0.997 $\pm$ 0.002 & 0.997 $\pm$ 0.003 \\
+simba\_blackbox & 0.1 & 0.999 $\pm$ 0.001 & 0.998 $\pm$ 0.001 & 0.993 $\pm$ 0.003 & 0.994 $\pm$ 0.005 \\
+simba\_blackbox & 0.2 & 0.998 $\pm$ 0.002 & 0.998 $\pm$ 0.002 & 0.909 $\pm$ 0.029 & 0.946 $\pm$ 0.054 \\
+simba\_blackbox & 0.5 & 0.998 $\pm$ 0.002 & 0.993 $\pm$ 0.005 & 0.187 $\pm$ 0.127 & 0.667 $\pm$ 0.157 \\
+\bottomrule\end{tabular}}\end{table}

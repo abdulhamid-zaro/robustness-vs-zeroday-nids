@@ -1,0 +1,7 @@
+torch==2.11.0
+xgboost==3.4.1
+scikit-learn
+pandas
+numpy
+scipy
+matplotlib
