@@ -1,0 +1,67 @@
+{
+ "source": "CSECICIDS2018_improved.zip (Liu et al., CNS 2022)",
+ "label_counts": {
+  "BENIGN": 59353486,
+  "Botnet Ares": 142921,
+  "Botnet Ares - Attempted": 262,
+  "FTP-BruteForce - Attempted": 298874,
+  "DoS Hulk": 1803160,
+  "DoS Hulk - Attempted": 86,
+  "Web Attack - XSS": 113,
+  "Web Attack - Brute Force": 131,
+  "Web Attack - Brute Force - Attempted": 137,
+  "Web Attack - SQL": 39,
+  "Web Attack - SQL - Attempted": 14,
+  "Web Attack - XSS - Attempted": 4,
+  "Infiltration - NMAP Portscan": 89374,
+  "Infiltration - Communication Victim Attacker": 204,
+  "Infiltration - Dropbox Download": 85,
+  "Infiltration - Dropbox Download - Attempted": 28,
+  "DoS GoldenEye": 22560,
+  "DoS Slowloris": 8490,
+  "DoS GoldenEye - Attempted": 4301,
+  "DoS Slowloris - Attempted": 2280,
+  "DDoS-LOIC-HTTP": 289328,
+  "DDoS-LOIC-UDP": 2527,
+  "DDoS-LOIC-UDP - Attempted": 251,
+  "SSH-BruteForce": 94197,
+  "DDoS-HOIC": 1082293
+ },
+ "family_counts_full": {
+  "BENIGN": 59659723,
+  "Botnet": 142921,
+  "DoS": 1834210,
+  "WebAttack": 283,
+  "PortScan": 89374,
+  "Infiltration": 289,
+  "DDoS": 1374148,
+  "BruteForce": 94197
+ },
+ "final_keep_rate": {
+  "BENIGN": 0.015625,
+  "Botnet": 1.0,
+  "DoS": 0.125,
+  "WebAttack": 1.0,
+  "PortScan": 1.0,
+  "Infiltration": 1.0,
+  "DDoS": 0.125,
+  "BruteForce": 1.0
+ },
+ "kept": {
+  "BENIGN": 931466,
+  "Botnet": 142921,
+  "DoS": 229902,
+  "WebAttack": 283,
+  "PortScan": 89374,
+  "Infiltration": 289,
+  "DDoS": 171063,
+  "BruteForce": 94197
+ },
+ "rows_written": 1659495,
+ "caps": {
+  "BENIGN": 1500000,
+  "default": 250000
+ },
+ "seed": 2018,
+ "minutes": 38.184910674889885
+}

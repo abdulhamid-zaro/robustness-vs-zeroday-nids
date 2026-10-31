@@ -1,0 +1,4 @@
+seed,variant,epsilon,repair,Flow Bytes/s,Flow Packets/s,Fwd Packets/s,Bwd Packets/s,Fwd Packet Length Mean,Bwd Packet Length Mean,Fwd Segment Size Avg,Average Packet Size
+0,clean,0.0,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,clean,0.0,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,clean,0.0,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

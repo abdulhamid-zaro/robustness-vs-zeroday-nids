@@ -1,0 +1,34 @@
+17:16:37 device cpu | torch 2.11.0+cpu | xgb 3.4.1 | python 3.13.18 | args {'data': '/content/data', 'out': '/content/res_temporal_s4', 'seeds': '4', 'models': 'rf,xgb,cnn', 'eps': '0.05,0.1,0.2,0.5', 'benign_train': 100000, 'benign_test': 40000, 'fam_train': 15000, 'fam_test': 5000, 'epochs': 10, 'bb_per_fam': 500, 'fpr': 0.01, 'quick': False, 'skip_loao': False, 'repair': False, 'audit_only': False, 'supp': False, 'supp2': False, 'tree_n': 200, 'split': 'temporal', 'openset': False, 'milp': False, 'milp_n': 40, 'milp_eps': '0.05,0.2', 'milp_models': 'xgb,rf', 'milp_time': 60.0}
+17:18:07 timestamps parsed for 100.0000% of flows
+17:18:29 loaded 2099971 rows, 384774 removed as duplicates/ambiguous, 1715197 kept
+17:18:34 features 82 | modifiable 42
+17:18:34 family counts {'BENIGN': 1432904, 'DoS': 171634, 'DDoS': 95144, 'PortScan': 7695, 'BruteForce': 6933, 'Botnet': 736, 'WebAttack': 104, 'Infiltration': 36, 'Heartbleed': 11}
+17:19:27 seed 4 in_dist trained rf in 45s
+17:19:44 seed 4 in_dist trained xgb in 17s
+17:24:04 seed 4 in_dist trained cnn in 260s
+17:24:42 seed 4 in_dist detection@1%FPR {'rf': 0.9967, 'xgb': 0.9974, 'cnn': 0.9591}
+17:24:42 seed 4 relations kept for audit/repair ['Flow Bytes/s', 'Flow Packets/s', 'Fwd Packets/s', 'Bwd Packets/s', 'Fwd Packet Length Mean', 'Bwd Packet Length Mean', 'Fwd Segment Size Avg', 'Average Packet Size']
+17:26:04 seed 4 eps 0.05 perturbation scenarios done
+17:27:25 seed 4 eps 0.1 perturbation scenarios done
+17:28:50 seed 4 eps 0.2 perturbation scenarios done
+17:30:13 seed 4 eps 0.5 perturbation scenarios done
+17:30:51 seed 4 loao-DoS trained rf in 37s
+17:31:06 seed 4 loao-DoS trained xgb in 15s
+17:34:55 seed 4 loao-DoS trained cnn in 229s
+17:36:04 seed 4 loao-DDoS trained rf in 37s
+17:36:20 seed 4 loao-DDoS trained xgb in 16s
+17:40:13 seed 4 loao-DDoS trained cnn in 234s
+17:41:28 seed 4 loao-PortScan trained rf in 38s
+17:41:42 seed 4 loao-PortScan trained xgb in 14s
+17:46:07 seed 4 loao-PortScan trained cnn in 265s
+17:47:29 seed 4 loao-BruteForce trained rf in 46s
+17:47:45 seed 4 loao-BruteForce trained xgb in 16s
+17:51:48 seed 4 loao-BruteForce trained cnn in 243s
+17:53:08 seed 4 loao-Botnet trained rf in 45s
+17:53:25 seed 4 loao-Botnet trained xgb in 17s
+17:57:38 seed 4 loao-Botnet trained cnn in 254s
+17:58:58 seed 4 loao-WebAttack trained rf in 46s
+17:59:15 seed 4 loao-WebAttack trained xgb in 16s
+18:03:29 seed 4 loao-WebAttack trained cnn in 254s
+18:04:07 seed 4 complete | elapsed 47.5 min
+18:04:07 DONE rows 406 md5 92dd2697bb6bd7402f2205d5525083e7
